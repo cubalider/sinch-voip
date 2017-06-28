@@ -1,0 +1,35 @@
+{
+    "name": "yosmy/sinch-voip",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-mongodb": "*",
+        "ext-json": "*",
+        "yosmy/voip": "@dev",
+        "yosmy/phone": "@dev",
+        "yosmy/country": "@dev",
+        "guzzlehttp/guzzle": "6.3",
+        "phpoffice/phpspreadsheet": "1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Voip\\Sinch\\": [
+                "src/call",
+                "src/connection",
+                "src/provider",
+                "src/rate"
+            ],
+            "Yosmy\\Voip\\Sinch\\Dev\\": [
+                "dev/call"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
